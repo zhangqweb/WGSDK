@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   'VALID_ARCHS' =>  'armv7 arm64 x86_64',
   }
 
-  s.swift_version = '5.0'
+#  s.swift_version = '5.0'
    
   s.dependency 'SVProgressHUD'
   s.dependency 'Adjust', '~> 4.23.0'
