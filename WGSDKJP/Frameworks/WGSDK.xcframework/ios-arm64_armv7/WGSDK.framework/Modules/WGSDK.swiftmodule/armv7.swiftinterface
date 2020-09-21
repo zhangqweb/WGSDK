@@ -374,16 +374,11 @@ public struct KeychainSwiftConstants {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class TestObj : ObjectiveC.NSObject {
-  @objc public func test(selfVC: UIKit.UIViewController)
-  @objc deinit
-  @objc override dynamic public init()
-}
 extension UIImage {
   public func grayImageWGSDK() -> UIKit.UIImage
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class WGSDK : ObjectiveC.NSObject {
-  @objc public static let shared: WGSDK.WGSDK
+@objc @_inheritsConvenienceInitializers @objcMembers public class WGSDKSwift : ObjectiveC.NSObject {
+  @objc public static let shared: WGSDK.WGSDKSwift
   @objc public func initSDK(_ application: UIKit.UIApplication, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, useDebug: Swift.Bool = false)
   @objc public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
   @objc public func applicationDidBecomeActive()

@@ -221,32 +221,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
+
+
 @class UIViewController;
-
-SWIFT_CLASS("_TtC5WGSDK7TestObj")
-@interface TestObj : NSObject
-- (void)testWithSelfVC:(UIViewController * _Nonnull)selfVC;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
-
-@class UIApplication;
-
-SWIFT_CLASS("_TtC5WGSDK5WGSDK")
-@interface WGSDK : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDK * _Nonnull shared;)
-+ (WGSDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (void)initSDK:(UIApplication * _Nonnull)application launchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions useDebug:(BOOL)useDebug SWIFT_METHOD_FAMILY(none);
-- (BOOL)application:(UIApplication * _Nonnull)app open:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
-- (void)applicationDidBecomeActive;
-- (void)resetYJAccount;
-@property (nonatomic) BOOL useServiceWay;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 
 SWIFT_CLASS("_TtC5WGSDK9WGSDKAuth")
 @interface WGSDKAuth : NSObject
@@ -357,6 +336,20 @@ SWIFT_CLASS("_TtC5WGSDK12WGSDKSetRole")
 SWIFT_CLASS("_TtC5WGSDK18WGSDKSetRoleResult")
 @interface WGSDKSetRoleResult : WGSDKSetRole
 - (nonnull instancetype)initWithServerCode:(NSString * _Nonnull)serverCode serverName:(NSString * _Nonnull)serverName roleId:(NSString * _Nonnull)roleId roleName:(NSString * _Nonnull)roleName gameName:(NSString * _Nonnull)gameName OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIApplication;
+
+SWIFT_CLASS("_TtC5WGSDK10WGSDKSwift")
+@interface WGSDKSwift : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKSwift * _Nonnull shared;)
++ (WGSDKSwift * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (void)initSDK:(UIApplication * _Nonnull)application launchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions useDebug:(BOOL)useDebug SWIFT_METHOD_FAMILY(none);
+- (BOOL)application:(UIApplication * _Nonnull)app open:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
+- (void)applicationDidBecomeActive;
+- (void)resetYJAccount;
+@property (nonatomic) BOOL useServiceWay;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSCoder;
@@ -636,32 +629,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
+
+
 @class UIViewController;
-
-SWIFT_CLASS("_TtC5WGSDK7TestObj")
-@interface TestObj : NSObject
-- (void)testWithSelfVC:(UIViewController * _Nonnull)selfVC;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
-
-@class UIApplication;
-
-SWIFT_CLASS("_TtC5WGSDK5WGSDK")
-@interface WGSDK : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDK * _Nonnull shared;)
-+ (WGSDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (void)initSDK:(UIApplication * _Nonnull)application launchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions useDebug:(BOOL)useDebug SWIFT_METHOD_FAMILY(none);
-- (BOOL)application:(UIApplication * _Nonnull)app open:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
-- (void)applicationDidBecomeActive;
-- (void)resetYJAccount;
-@property (nonatomic) BOOL useServiceWay;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 
 SWIFT_CLASS("_TtC5WGSDK9WGSDKAuth")
 @interface WGSDKAuth : NSObject
@@ -772,6 +744,20 @@ SWIFT_CLASS("_TtC5WGSDK12WGSDKSetRole")
 SWIFT_CLASS("_TtC5WGSDK18WGSDKSetRoleResult")
 @interface WGSDKSetRoleResult : WGSDKSetRole
 - (nonnull instancetype)initWithServerCode:(NSString * _Nonnull)serverCode serverName:(NSString * _Nonnull)serverName roleId:(NSString * _Nonnull)roleId roleName:(NSString * _Nonnull)roleName gameName:(NSString * _Nonnull)gameName OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIApplication;
+
+SWIFT_CLASS("_TtC5WGSDK10WGSDKSwift")
+@interface WGSDKSwift : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKSwift * _Nonnull shared;)
++ (WGSDKSwift * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (void)initSDK:(UIApplication * _Nonnull)application launchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions useDebug:(BOOL)useDebug SWIFT_METHOD_FAMILY(none);
+- (BOOL)application:(UIApplication * _Nonnull)app open:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
+- (void)applicationDidBecomeActive;
+- (void)resetYJAccount;
+@property (nonatomic) BOOL useServiceWay;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSCoder;
