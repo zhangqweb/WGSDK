@@ -1,0 +1,22 @@
+{
+  "name": "WGSDKJP",
+  "version": "0.1.0",
+  "summary": "A short description of WGSDKJP.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhangqweb@126.com/WGSDKJP",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhangqweb@126.com": "zhangqweb@126.com"
+  },
+  "source": {
+    "git": "https://github.com/zhangqweb@126.com/WGSDKJP.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "WGSDKJP/Classes/**/*"
+}

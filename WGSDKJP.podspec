@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WGSDKJP'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of WGSDKJP.'
+  s.version          = '0.0.1'
+  s.summary          = 'games WGSDKJP.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,40 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/zhangqweb@126.com/WGSDKJP'
+  s.homepage         = 'https://github.com/zhangqweb/WGSDKJP'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zhangqweb@126.com' => 'zhangqweb@126.com' }
-  s.source           = { :git => 'https://github.com/zhangqweb@126.com/WGSDKJP.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/zhangqweb/WGSDKJP.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'WGSDKJP/Classes/**/*'
+  s.resources = "ZQSDKTest/Assets/WGSDKResources.bundle"
+  s.vendored_frameworks = 'ZQSDKTest/Frameworks/WGSDK.xcframework'
   
-  # s.resource_bundles = {
-  #   'WGSDKJP' => ['WGSDKJP/Assets/*.png']
-  # }
+  s.xcconfig = {
+  'VALID_ARCHS' =>  'armv7 arm64 x86_64',
+  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.swift_version = '5.0'
+   
+  s.dependency 'SVProgressHUD'
+  s.dependency 'Adjust', '~> 4.23.0'
+  s.dependency 'RxSwift'
+  s.dependency 'RxCocoa'
+  s.dependency 'Moya'
+  s.dependency 'Result'
+  s.dependency 'HandyJSON'
+  s.dependency 'Alamofire'
+  s.dependency 'SnapKit'
+  s.dependency 'TwitterKit5'
+  s.dependency 'GoogleSignIn'
+  s.dependency 'Firebase/Analytics'
+  s.dependency 'Firebase/Auth'
+  s.dependency 'FBSDKLoginKit','~> 7.1.1'
+  s.dependency 'FBSDKShareKit','~> 7.1.1'
+  s.dependency 'LineSDKSwift', '~> 5.7.0'
+  s.dependency 'IQKeyboardManager'
+  s.dependency 'ZLPhotoBrowser'
 end
