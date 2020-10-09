@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WGSDKJP'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'games WGSDKJP.'
 
 # This description is used to generate tags and improve search results.
@@ -52,6 +52,8 @@ TODO: Add long description of the pod here.
   s.dependency 'GoogleSignIn'
   s.dependency 'Firebase/Analytics'
   s.dependency 'Firebase/Auth'
+  s.dependency 'Firebase/Messaging'
+  s.dependency 'Firebase/Crashlytics'
   s.dependency 'FBSDKLoginKit','~> 7.1.1'
   s.dependency 'FBSDKShareKit','~> 7.1.1'
   s.dependency 'LineSDKSwift', '~> 5.7.0'

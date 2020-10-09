@@ -10,9 +10,6 @@
 #endif
 #endif
 
-#import "KeychainSwift.h"
-#import "WGMBProgressHUD.h"
-#import "WGSDK-Bridging-Header.h"
 
 FOUNDATION_EXPORT double WGSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char WGSDKVersionString[];
