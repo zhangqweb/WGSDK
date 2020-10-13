@@ -38,6 +38,7 @@ TODO: Add long description of the pod here.
   }
 
   s.swift_version = '5.0'
+  s.static_framework = true
    
   s.dependency 'SVProgressHUD'
   s.dependency 'Adjust', '~> 4.23.0'
