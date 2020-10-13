@@ -106,11 +106,6 @@ public protocol PaymentQueue : AnyObject {
 }
 extension SKPaymentQueue : WGSDK.PaymentQueue {
 }
-extension SKPaymentTransaction {
-  @objc override dynamic open var debugDescription: Swift.String {
-    @objc get
-  }
-}
 extension SKPaymentTransactionState : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
     get
@@ -484,14 +479,15 @@ final public class WGSDKNetworkLog : Moya.PluginType {
   @objc public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
   @objc public func applicationDidBecomeActive()
   @objc public func resetYJAccount()
-  @objc public var useServiceWay: Swift.Bool {
-    @objc get
-    @objc set(newValue)
-  }
   @objc deinit
   @objc override dynamic public init()
 }
 extension WGSDKSwift {
+  @objc dynamic public var useServiceWay: Swift.Bool {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc dynamic public func useDebug(_ useDebug: Swift.Bool)
   @objc dynamic public func login(_ login: WGSDK.WGSDKLogin, fromVC: UIKit.UIViewController, handler: @escaping ((WGSDK.WGSDKLoginResult, Swift.Error?) -> Swift.Void))
   @objc dynamic public func showWidget(_ vc: UIKit.UIViewController, position: Swift.Int, changeAccountCallback: ((WGSDK.WGSDKLoginResult, Swift.Error?) -> Swift.Void)? = nil)
   @objc dynamic public func hideWidget(_ vc: UIKit.UIViewController)

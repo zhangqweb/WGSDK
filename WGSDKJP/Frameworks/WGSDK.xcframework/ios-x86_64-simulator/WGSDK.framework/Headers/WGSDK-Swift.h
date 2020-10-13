@@ -191,7 +191,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
-@import StoreKit;
 @import UIKit;
 #endif
 
@@ -213,10 +212,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
-
-@interface SKPaymentTransaction (SWIFT_EXTENSION(WGSDK))
-@property (nonatomic, readonly, copy) NSString * _Nonnull debugDescription;
-@end
 
 
 
@@ -363,12 +358,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKSwift *
 /// Facebook 回到前台重新激活
 - (void)applicationDidBecomeActive;
 - (void)resetYJAccount;
-@property (nonatomic) BOOL useServiceWay;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 @interface WGSDKSwift (SWIFT_EXTENSION(WGSDK))
+/// 设置客户回报模式 默认SDK回报
+@property (nonatomic) BOOL useServiceWay;
+- (void)useDebug:(BOOL)useDebug;
 /// 启动登录页
 - (void)login:(WGSDKLogin * _Nonnull)login fromVC:(UIViewController * _Nonnull)fromVC handler:(void (^ _Nonnull)(WGSDKLoginResult * _Nonnull, NSError * _Nullable))handler;
 /// 显示浮窗

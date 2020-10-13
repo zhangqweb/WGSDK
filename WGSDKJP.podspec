@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WGSDKJP'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = 'games WGSDKJP.'
 
 # This description is used to generate tags and improve search results.
@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   'VALID_ARCHS' =>  'armv7 arm64 x86_64',
   }
 
-#  s.swift_version = '5.0'
+  s.swift_version = '5.0'
    
   s.dependency 'SVProgressHUD'
   s.dependency 'Adjust', '~> 4.23.0'
