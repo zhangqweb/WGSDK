@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WGSDKJP'
-  s.version          = '0.0.7'
+  s.version          = '0.0.8'
   s.summary          = 'games WGSDKJP.'
 
 # This description is used to generate tags and improve search results.
@@ -45,24 +45,24 @@ TODO: Add long description of the pod here.
   s.swift_version = ['5.0', '5.1', '5.2']
   s.static_framework = true
    
-  s.dependency 'SVProgressHUD'
-  s.dependency 'Adjust', '~> 4.23.0'
-  s.dependency 'RxSwift'
-  s.dependency 'RxCocoa'
-  s.dependency 'Moya'
-  s.dependency 'Result'
-  s.dependency 'HandyJSON'
-  s.dependency 'Alamofire'
-  s.dependency 'SnapKit'
-  s.dependency 'TwitterKit5'
-  s.dependency 'GoogleSignIn'
-  s.dependency 'Firebase/Analytics'
-  s.dependency 'Firebase/Auth'
-  s.dependency 'Firebase/Messaging'
-  s.dependency 'Firebase/Crashlytics'
-  s.dependency 'FBSDKLoginKit','~> 7.1.1'
-  s.dependency 'FBSDKShareKit','~> 7.1.1'
-  s.dependency 'LineSDKSwift', '~> 5.7.0'
-  s.dependency 'IQKeyboardManager'
-  s.dependency 'ZLPhotoBrowser'
+#  s.dependency 'SVProgressHUD'
+#  s.dependency 'Adjust', '~> 4.23.0'
+#  s.dependency 'RxSwift'
+#  s.dependency 'RxCocoa'
+#  s.dependency 'Moya'
+#  s.dependency 'Result'
+#  s.dependency 'HandyJSON'
+#  s.dependency 'Alamofire'
+#  s.dependency 'SnapKit'
+#  s.dependency 'TwitterKit5'
+#  s.dependency 'GoogleSignIn'
+#  s.dependency 'Firebase/Analytics'
+#  s.dependency 'Firebase/Auth'
+#  s.dependency 'Firebase/Messaging'
+#  s.dependency 'Firebase/Crashlytics'
+#  s.dependency 'FBSDKLoginKit','~> 7.1.1'
+#  s.dependency 'FBSDKShareKit','~> 7.1.1'
+#  s.dependency 'LineSDKSwift', '~> 5.7.0'
+#  s.dependency 'IQKeyboardManager'
+#  s.dependency 'ZLPhotoBrowser'
 end
