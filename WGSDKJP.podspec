@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
 
   s.resources = "WGSDKJP/Assets/WGSDKResources.bundle"
-  s.vendored_frameworks = 'WGSDKJP/Frameworks/WGSDK.xcframework'
+  s.vendored_frameworks = 'WGSDKJP/Frameworks/WGSDK.framework'
   
   s.xcconfig = {
   'VALID_ARCHS' =>  'armv7 arm64 x86_64',

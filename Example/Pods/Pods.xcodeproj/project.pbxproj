@@ -27,29 +27,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0014081564E600C5960C9E50130E4EDE /* Pods_WGSDKJP_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WGSDKJP_Tests.framework; path = "Pods-WGSDKJP_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0014081564E600C5960C9E50130E4EDE /* Pods_WGSDKJP_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WGSDKJP_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15826A48DC208958FE8BD3ABE42E29A3 /* Pods-WGSDKJP_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WGSDKJP_Tests-dummy.m"; sourceTree = "<group>"; };
 		24C58895EF51ABF827928A0021E2FA84 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = WGSDKJP/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		2F80F1AF9E2797459848EAD42216C209 /* WGSDKJP.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WGSDKJP.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2F80F1AF9E2797459848EAD42216C209 /* WGSDKJP.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WGSDKJP.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		40E7E4B5D770B6E0B673575F2FECD2AA /* WGSDKJP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WGSDKJP-prefix.pch"; sourceTree = "<group>"; };
-		4EA1ABB927071B2565398DB68BFBD6A3 /* WGSDKJP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WGSDKJP.framework; path = WGSDKJP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EA1ABB927071B2565398DB68BFBD6A3 /* WGSDKJP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WGSDKJP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5252564C00359E21B49F02F7E10534C7 /* Pods-WGSDKJP_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WGSDKJP_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		648BF5240A38B5DAD1511CE4D16D9646 /* WGSDKJP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WGSDKJP-dummy.m"; sourceTree = "<group>"; };
-		9247E7095D2D20C2563EEE307F38C5F7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9247E7095D2D20C2563EEE307F38C5F7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		94D58B68AB6A7203C793906828CD9609 /* Pods-WGSDKJP_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WGSDKJP_Tests-Info.plist"; sourceTree = "<group>"; };
 		95DD9847D2B7F360986E0FE42982A676 /* WGSDKJP-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WGSDKJP-Info.plist"; sourceTree = "<group>"; };
 		98E0C7BFF63B1C58ED12537C5566E99E /* WGSDKJP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WGSDKJP.modulemap; sourceTree = "<group>"; };
 		999EA656088CD3697A3CDF73ED3CF1DD /* Pods-WGSDKJP_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WGSDKJP_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9AA1684A4267B183624836135CD4A1FB /* Pods-WGSDKJP_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WGSDKJP_Tests.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A6439EC5D38B451118398B5BF15BFA32 /* Pods-WGSDKJP_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WGSDKJP_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CD7AD2E7D4E0F1D110F8D0020B9837CF /* Pods-WGSDKJP_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WGSDKJP_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1C54BE988B94295138ED1C5290D6C1E /* WGSDKJP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WGSDKJP-umbrella.h"; sourceTree = "<group>"; };
 		DABCE4415624F134B1CC342DDCC292B9 /* Pods-WGSDKJP_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WGSDKJP_Tests-umbrella.h"; sourceTree = "<group>"; };
 		E7FFA3AA985925C5B0BB3BAC9E28E75C /* WGSDKJP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WGSDKJP.release.xcconfig; sourceTree = "<group>"; };
 		EAA0B428D9A7FB4B416F684576B93A37 /* WGSDKJP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WGSDKJP.debug.xcconfig; sourceTree = "<group>"; };
-		EC3F836C1DA92D5E9E38F62B5C9EDDE9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		EC3F836C1DA92D5E9E38F62B5C9EDDE9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F9C1DC0B5C97B0E6DE7E745733021AE0 /* Pods-WGSDKJP_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WGSDKJP_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -328,7 +328,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-WGSDKJP_Tests/Pods-WGSDKJP_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-WGSDKJP_Tests/Pods-WGSDKJP_Tests.modulemap";
@@ -400,8 +400,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -551,7 +550,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-WGSDKJP_Tests/Pods-WGSDKJP_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-WGSDKJP_Tests/Pods-WGSDKJP_Tests.modulemap";
