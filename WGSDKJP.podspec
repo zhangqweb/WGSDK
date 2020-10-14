@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WGSDKJP'
-  s.version          = '0.0.9'
+  s.version          = '0.0.10'
   s.summary          = 'games WGSDKJP.'
 
 # This description is used to generate tags and improve search results.
@@ -31,15 +31,22 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
 
   s.resources = "WGSDKJP/Assets/WGSDKResources.bundle"
-  s.vendored_frameworks = 'WGSDKJP/Frameworks/WGSDK.xcframework'
+#  s.vendored_frameworks = 'WGSDKJP/Frameworks/WGSDK.xcframework'
+
+  s.vendored_frameworks = 'WGSDKJP/Frameworks/WGSDK.framework'
+ 
+  
+#  s.xcconfig = {
+#  'VALID_ARCHS' =>  'armv7 arm64 x86_64',
+#  }
   
   s.xcconfig = {
-  'VALID_ARCHS' =>  'armv7 arm64 x86_64',
+  'VALID_ARCHS' =>  'armv7 arm64',
   }
   
    
 
-  s.source_files = 'WGSDKJP/Classes/*.swift'
+#  s.source_files = 'WGSDKJP/Classes/*.swift'
    
   s.frameworks = 'Foundation', 'UIKit'
   s.requires_arc = true
