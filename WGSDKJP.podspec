@@ -37,6 +37,9 @@ TODO: Add long description of the pod here.
   'VALID_ARCHS' =>  'armv7 arm64 x86_64',
   }
 
+  s.frameworks = 'Foundation', 'UIKit'
+  s.requires_arc = true
+  
   s.swift_version = '5.0'
   s.static_framework = true
    
