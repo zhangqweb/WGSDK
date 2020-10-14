@@ -39,6 +39,8 @@ TODO: Add long description of the pod here.
   
    
 
+   spec.source_files = 'WGSDKJP/Classes/*.swift'
+   
   s.frameworks = 'Foundation', 'UIKit'
   s.requires_arc = true
   
