@@ -31,18 +31,19 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
 
   s.resources = "WGSDKJP/Assets/WGSDKResources.bundle"
-#  s.vendored_frameworks = 'WGSDKJP/Frameworks/WGSDK.xcframework'
+  s.vendored_frameworks = 'WGSDKJP/Frameworks/WGSDK.xcframework'
 
-  s.vendored_frameworks = 'WGSDKJP/Frameworks/WGSDK.framework'
- 
-  
-#  s.xcconfig = {
-#  'VALID_ARCHS' =>  'armv7 arm64 x86_64',
-#  }
+#  s.vendored_frameworks = 'WGSDKJP/Frameworks/WGSDK.framework'
+    
+    s.source_files = 'WGSDKJP/Classes/**/*'
   
   s.xcconfig = {
-  'VALID_ARCHS' =>  'armv7 arm64',
+  'VALID_ARCHS' =>  'armv7 arm64 x86_64',
   }
+  
+#  s.xcconfig = {
+#  'VALID_ARCHS' =>  'armv7 arm64',
+#  }
   
    
 
@@ -51,27 +52,27 @@ TODO: Add long description of the pod here.
   s.frameworks = 'Foundation', 'UIKit'
   s.requires_arc = true
   
-  s.swift_version = ['5.0', '5.1', '5.2']
+  s.swift_version = ['5.0', '5.1', '5.2' , '5.3']
   s.static_framework = true
    
-  s.dependency 'SVProgressHUD'
-  s.dependency 'Adjust', '~> 4.23.0'
-  s.dependency 'RxSwift'
-  s.dependency 'RxCocoa'
-  s.dependency 'Moya'
-  s.dependency 'Result'
-  s.dependency 'HandyJSON'
-  s.dependency 'Alamofire'
-  s.dependency 'SnapKit'
-  s.dependency 'TwitterKit5'
-  s.dependency 'GoogleSignIn'
-  s.dependency 'Firebase/Analytics'
-  s.dependency 'Firebase/Auth'
-  s.dependency 'Firebase/Messaging'
-  s.dependency 'Firebase/Crashlytics'
-  s.dependency 'FBSDKLoginKit','~> 7.1.1'
-  s.dependency 'FBSDKShareKit','~> 7.1.1'
-  s.dependency 'LineSDKSwift', '~> 5.7.0'
-  s.dependency 'IQKeyboardManager'
-  s.dependency 'ZLPhotoBrowser'
+   s.dependency 'SVProgressHUD'
+   s.dependency 'Adjust', '~> 4.23.0'
+   s.dependency 'RxSwift' ,'6.0.0-rc.1'
+   s.dependency 'RxCocoa' ,'6.0.0-rc.1'
+   s.dependency 'Moya'
+   s.dependency 'Result'
+   s.dependency 'HandyJSON','5.0.2'
+   s.dependency 'Alamofire','5.2.2'
+   s.dependency 'SnapKit','5.0.1'
+   s.dependency 'TwitterKit5','5.2.0'
+   s.dependency 'GoogleSignIn'
+   s.dependency 'Firebase/Analytics'
+   s.dependency 'Firebase/Auth'
+   s.dependency 'Firebase/Messaging'
+   s.dependency 'Firebase/Crashlytics'
+   s.dependency 'FBSDKLoginKit'
+   s.dependency 'FBSDKShareKit'
+   s.dependency 'LineSDKSwift'
+   s.dependency 'IQKeyboardManager'
+   s.dependency 'ZLPhotoBrowser', '4.0.5'
 end
