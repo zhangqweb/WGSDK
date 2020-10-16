@@ -193,6 +193,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
+@import StoreKit;
 @import UIKit;
 #endif
 
@@ -214,6 +215,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+@interface SKPaymentTransaction (SWIFT_EXTENSION(WGSDK))
+@property (nonatomic, readonly, copy) NSString * _Nonnull debugDescription;
+@end
 
 
 
@@ -295,6 +300,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKLoginMa
 
 SWIFT_CLASS("_TtC5WGSDK16WGSDKLoginResult")
 @interface WGSDKLoginResult : NSObject
+@property (nonatomic, copy) NSString * _Nonnull guestId;
+@property (nonatomic, copy) NSString * _Nonnull type;
+@property (nonatomic, copy) NSString * _Nonnull token;
+@property (nonatomic, copy) NSString * _Nonnull refreshToken;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -367,9 +376,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKSwift *
 @interface WGSDKSwift (SWIFT_EXTENSION(WGSDK))
 /// 设置客户回报模式 默认SDK回报
 @property (nonatomic) BOOL useServiceWay;
+/// 设置开发环境
 - (void)useDebug:(BOOL)useDebug;
 /// 启动登录页
 - (void)login:(WGSDKLogin * _Nonnull)login fromVC:(UIViewController * _Nonnull)fromVC handler:(void (^ _Nonnull)(WGSDKLoginResult * _Nonnull, NSError * _Nullable))handler;
+/// 退出登录
+- (void)loginOut;
 /// 显示浮窗
 - (void)showWidget:(UIViewController * _Nonnull)vc position:(NSInteger)position changeAccountCallback:(void (^ _Nullable)(WGSDKLoginResult * _Nonnull, NSError * _Nullable))changeAccountCallback;
 /// 移除浮窗
@@ -633,6 +645,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
+@import StoreKit;
 @import UIKit;
 #endif
 
@@ -654,6 +667,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+@interface SKPaymentTransaction (SWIFT_EXTENSION(WGSDK))
+@property (nonatomic, readonly, copy) NSString * _Nonnull debugDescription;
+@end
 
 
 
@@ -735,6 +752,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKLoginMa
 
 SWIFT_CLASS("_TtC5WGSDK16WGSDKLoginResult")
 @interface WGSDKLoginResult : NSObject
+@property (nonatomic, copy) NSString * _Nonnull guestId;
+@property (nonatomic, copy) NSString * _Nonnull type;
+@property (nonatomic, copy) NSString * _Nonnull token;
+@property (nonatomic, copy) NSString * _Nonnull refreshToken;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -807,9 +828,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKSwift *
 @interface WGSDKSwift (SWIFT_EXTENSION(WGSDK))
 /// 设置客户回报模式 默认SDK回报
 @property (nonatomic) BOOL useServiceWay;
+/// 设置开发环境
 - (void)useDebug:(BOOL)useDebug;
 /// 启动登录页
 - (void)login:(WGSDKLogin * _Nonnull)login fromVC:(UIViewController * _Nonnull)fromVC handler:(void (^ _Nonnull)(WGSDKLoginResult * _Nonnull, NSError * _Nullable))handler;
+/// 退出登录
+- (void)loginOut;
 /// 显示浮窗
 - (void)showWidget:(UIViewController * _Nonnull)vc position:(NSInteger)position changeAccountCallback:(void (^ _Nullable)(WGSDKLoginResult * _Nonnull, NSError * _Nullable))changeAccountCallback;
 /// 移除浮窗
