@@ -193,7 +193,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
-@import StoreKit;
 @import UIKit;
 #endif
 
@@ -214,11 +213,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
-
-
-@interface SKPaymentTransaction (SWIFT_EXTENSION(WGSDK))
-@property (nonatomic, readonly, copy) NSString * _Nonnull debugDescription;
-@end
 
 
 
@@ -370,6 +364,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKSwift *
 - (void)applicationDidBecomeActive;
 - (void)resetYJAccount;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface WGSDKSwift (SWIFT_EXTENSION(WGSDK))
+/// 字符串装换成json
+- (NSString * _Nonnull)dictionaryToJosn:(NSDictionary<NSString *, NSString *> * _Nonnull)info SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -645,7 +645,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
-@import StoreKit;
 @import UIKit;
 #endif
 
@@ -666,11 +665,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
-
-
-@interface SKPaymentTransaction (SWIFT_EXTENSION(WGSDK))
-@property (nonatomic, readonly, copy) NSString * _Nonnull debugDescription;
-@end
 
 
 
@@ -822,6 +816,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKSwift *
 - (void)applicationDidBecomeActive;
 - (void)resetYJAccount;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface WGSDKSwift (SWIFT_EXTENSION(WGSDK))
+/// 字符串装换成json
+- (NSString * _Nonnull)dictionaryToJosn:(NSDictionary<NSString *, NSString *> * _Nonnull)info SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

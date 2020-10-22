@@ -6,6 +6,7 @@ import Adjust
 import Alamofire
 import AuthenticationServices
 import CommonCrypto
+import CoreTelephony
 import FBSDKCoreKit
 import FBSDKLoginKit
 import FirebaseAnalytics
@@ -105,11 +106,6 @@ public protocol PaymentQueue : AnyObject {
   func finishTransaction(_ transaction: StoreKit.SKPaymentTransaction)
 }
 extension SKPaymentQueue : WGSDK.PaymentQueue {
-}
-extension SKPaymentTransaction {
-  @objc override dynamic open var debugDescription: Swift.String {
-    @objc get
-  }
 }
 extension SKPaymentTransactionState : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
@@ -505,6 +501,9 @@ extension WGSDKSwift {
   @objc dynamic public func deleteRole(_ role: WGSDK.WGSDKDeleteRole, handler: @escaping ((Swift.Error?) -> Swift.Void))
   @objc dynamic public func gameLog(_ gameLog: WGSDK.WGSDKEnterGameLog, handler: @escaping ((Swift.Error?) -> Swift.Void))
   @objc dynamic public func buyProduct(_ product: WGSDK.WGSDKIAPProduct, callBack: @escaping ((WGSDK.WGSDKPaymentResult?, Swift.Error?) -> Swift.Void))
+}
+extension WGSDKSwift {
+  @objc dynamic public func dictionaryToJosn(_ info: [Swift.String : Swift.String]) -> Swift.String
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class WGSDKWidgetButtonPosition : ObjectiveC.NSObject {
   @objc public static var left: Swift.Int
