@@ -368,8 +368,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKSwift *
 
 
 @interface WGSDKSwift (SWIFT_EXTENSION(WGSDK))
-/// 字符串装换成json
-- (NSString * _Nonnull)dictionaryToJosn:(NSDictionary<NSString *, NSString *> * _Nonnull)info SWIFT_WARN_UNUSED_RESULT;
+/// dictionary转换成json
+- (NSString * _Nonnull)dictionaryToJson:(NSDictionary<NSString *, NSString *> * _Nonnull)info SWIFT_WARN_UNUSED_RESULT;
+/// json转换成dictionary
+- (NSDictionary<NSString *, id> * _Nonnull)jsonToDictionary:(NSString * _Nonnull)json SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -820,8 +822,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKSwift *
 
 
 @interface WGSDKSwift (SWIFT_EXTENSION(WGSDK))
-/// 字符串装换成json
-- (NSString * _Nonnull)dictionaryToJosn:(NSDictionary<NSString *, NSString *> * _Nonnull)info SWIFT_WARN_UNUSED_RESULT;
+/// dictionary转换成json
+- (NSString * _Nonnull)dictionaryToJson:(NSDictionary<NSString *, NSString *> * _Nonnull)info SWIFT_WARN_UNUSED_RESULT;
+/// json转换成dictionary
+- (NSDictionary<NSString *, id> * _Nonnull)jsonToDictionary:(NSString * _Nonnull)json SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

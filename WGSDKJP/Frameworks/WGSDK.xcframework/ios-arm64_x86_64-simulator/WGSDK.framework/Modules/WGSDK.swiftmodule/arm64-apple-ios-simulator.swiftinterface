@@ -503,7 +503,8 @@ extension WGSDKSwift {
   @objc dynamic public func buyProduct(_ product: WGSDK.WGSDKIAPProduct, callBack: @escaping ((WGSDK.WGSDKPaymentResult?, Swift.Error?) -> Swift.Void))
 }
 extension WGSDKSwift {
-  @objc dynamic public func dictionaryToJosn(_ info: [Swift.String : Swift.String]) -> Swift.String
+  @objc dynamic public func dictionaryToJson(_ info: [Swift.String : Swift.String]) -> Swift.String
+  @objc dynamic public func jsonToDictionary(_ json: Swift.String) -> [Swift.String : Any]
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class WGSDKWidgetButtonPosition : ObjectiveC.NSObject {
   @objc public static var left: Swift.Int
