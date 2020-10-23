@@ -457,8 +457,7 @@ final public class WGSDKNetworkLog : Moya.PluginType {
   @objc public var roleId: Swift.String
   @objc public var roleName: Swift.String
   @objc public var serverName: Swift.String
-  @objc public var gameName: Swift.String
-  @objc public init(serverCode: Swift.String, serverName: Swift.String, roleId: Swift.String, roleName: Swift.String, gameName: Swift.String)
+  @objc public init(serverCode: Swift.String, serverName: Swift.String, roleId: Swift.String, roleName: Swift.String)
   @objc deinit
   @objc override dynamic public init()
 }
@@ -475,12 +474,14 @@ final public class WGSDKNetworkLog : Moya.PluginType {
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class WGSDKSetRoleResult : WGSDK.WGSDKSetRole {
   @objc deinit
-  @objc override public init(serverCode: Swift.String, serverName: Swift.String, roleId: Swift.String, roleName: Swift.String, gameName: Swift.String)
+  @objc override public init(serverCode: Swift.String, serverName: Swift.String, roleId: Swift.String, roleName: Swift.String)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class WGSDKSwift : ObjectiveC.NSObject {
   @objc public static let shared: WGSDK.WGSDKSwift
-  @objc public var needReLogin: (() -> Swift.Void)?
+  @objc public var needReLoginHandler: (() -> Swift.Void)?
+  @objc public var changeAccountResultHandler: ((WGSDK.WGSDKLoginResult, Swift.Error?) -> Swift.Void)?
   @objc public func initSDK(_ application: UIKit.UIApplication, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, useDebug: Swift.Bool = false)
+  @objc public func initSDKUnity(useDebug: Swift.Bool = false, adjustAppToken: Swift.String, lineChannelID: Swift.String, twitterKey: Swift.String, twitterSecret: Swift.String)
   @objc public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
   @objc public func applicationDidBecomeActive()
   @objc public func resetYJAccount()
@@ -495,7 +496,7 @@ extension WGSDKSwift {
   @objc dynamic public func useDebug(_ useDebug: Swift.Bool)
   @objc dynamic public func login(_ login: WGSDK.WGSDKLogin, fromVC: UIKit.UIViewController, handler: @escaping ((WGSDK.WGSDKLoginResult, Swift.Error?) -> Swift.Void))
   @objc dynamic public func loginOut()
-  @objc dynamic public func showWidget(_ vc: UIKit.UIViewController, position: Swift.Int, changeAccountCallback: ((WGSDK.WGSDKLoginResult, Swift.Error?) -> Swift.Void)? = nil)
+  @objc dynamic public func showWidget(_ vc: UIKit.UIViewController, position: Swift.Int)
   @objc dynamic public func hideWidget(_ vc: UIKit.UIViewController)
   @objc dynamic public func setRole(_ role: WGSDK.WGSDKSetRole, handler: @escaping ((WGSDK.WGSDKSetRoleResult?, Swift.Error?) -> Swift.Void))
   @objc dynamic public func deleteRole(_ role: WGSDK.WGSDKDeleteRole, handler: @escaping ((Swift.Error?) -> Swift.Void))
@@ -520,7 +521,7 @@ extension WGSDKSwift {
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class WGSDKWidgetButton : UIKit.UIButton {
   @objc public var isShowWidgetButton: Swift.Bool
-  @objc public class func show(_ vc: UIKit.UIViewController, position: Swift.Int, changeAccountCallback: ((WGSDK.WGSDKLoginResult, Swift.Error?) -> Swift.Void)? = nil)
+  @objc public class func show(_ vc: UIKit.UIViewController, position: Swift.Int)
   @objc public class func hide(_ vc: UIKit.UIViewController?)
   @objc public class func isShow(_ vc: UIKit.UIViewController?) -> Swift.Bool
   @objc deinit

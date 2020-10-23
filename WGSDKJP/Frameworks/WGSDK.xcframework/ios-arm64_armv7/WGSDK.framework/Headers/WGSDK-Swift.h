@@ -336,8 +336,7 @@ SWIFT_CLASS("_TtC5WGSDK12WGSDKSetRole")
 @property (nonatomic, copy) NSString * _Nonnull roleId;
 @property (nonatomic, copy) NSString * _Nonnull roleName;
 @property (nonatomic, copy) NSString * _Nonnull serverName;
-@property (nonatomic, copy) NSString * _Nonnull gameName;
-- (nonnull instancetype)initWithServerCode:(NSString * _Nonnull)serverCode serverName:(NSString * _Nonnull)serverName roleId:(NSString * _Nonnull)roleId roleName:(NSString * _Nonnull)roleName gameName:(NSString * _Nonnull)gameName OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithServerCode:(NSString * _Nonnull)serverCode serverName:(NSString * _Nonnull)serverName roleId:(NSString * _Nonnull)roleId roleName:(NSString * _Nonnull)roleName OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -345,7 +344,7 @@ SWIFT_CLASS("_TtC5WGSDK12WGSDKSetRole")
 
 SWIFT_CLASS("_TtC5WGSDK18WGSDKSetRoleResult")
 @interface WGSDKSetRoleResult : WGSDKSetRole
-- (nonnull instancetype)initWithServerCode:(NSString * _Nonnull)serverCode serverName:(NSString * _Nonnull)serverName roleId:(NSString * _Nonnull)roleId roleName:(NSString * _Nonnull)roleName gameName:(NSString * _Nonnull)gameName OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithServerCode:(NSString * _Nonnull)serverCode serverName:(NSString * _Nonnull)serverName roleId:(NSString * _Nonnull)roleId roleName:(NSString * _Nonnull)roleName OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIApplication;
@@ -355,9 +354,12 @@ SWIFT_CLASS("_TtC5WGSDK10WGSDKSwift")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKSwift * _Nonnull shared;)
 + (WGSDKSwift * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 /// 重新登录回调（其他设备登录当前账号或token刷新失败）
-@property (nonatomic, copy) void (^ _Nullable needReLogin)(void);
+@property (nonatomic, copy) void (^ _Nullable needReLoginHandler)(void);
+/// 重新登录回调（其他设备登录当前账号或token刷新失败）
+@property (nonatomic, copy) void (^ _Nullable changeAccountResultHandler)(WGSDKLoginResult * _Nonnull, NSError * _Nullable);
 /// WGSDK初始化  useDebug:开发环境 默认是正式环境
 - (void)initSDK:(UIApplication * _Nonnull)application launchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions useDebug:(BOOL)useDebug SWIFT_METHOD_FAMILY(none);
+- (void)initSDKUnityWithUseDebug:(BOOL)useDebug adjustAppToken:(NSString * _Nonnull)adjustAppToken lineChannelID:(NSString * _Nonnull)lineChannelID twitterKey:(NSString * _Nonnull)twitterKey twitterSecret:(NSString * _Nonnull)twitterSecret SWIFT_METHOD_FAMILY(none);
 /// 第三方登录回调
 - (BOOL)application:(UIApplication * _Nonnull)app open:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 /// Facebook 回到前台重新激活
@@ -385,7 +387,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKSwift *
 /// 退出登录
 - (void)loginOut;
 /// 显示浮窗
-- (void)showWidget:(UIViewController * _Nonnull)vc position:(NSInteger)position changeAccountCallback:(void (^ _Nullable)(WGSDKLoginResult * _Nonnull, NSError * _Nullable))changeAccountCallback;
+- (void)showWidget:(UIViewController * _Nonnull)vc position:(NSInteger)position;
 /// 移除浮窗
 - (void)hideWidget:(UIViewController * _Nonnull)vc;
 /// 设置角色
@@ -410,7 +412,7 @@ SWIFT_CLASS("_TtC5WGSDK17WGSDKWidgetButton")
 ///
 /// \param changeAccountCallback 切换账号回调
 ///
-+ (void)show:(UIViewController * _Nonnull)vc position:(NSInteger)position changeAccountCallback:(void (^ _Nullable)(WGSDKLoginResult * _Nonnull, NSError * _Nullable))changeAccountCallback;
++ (void)show:(UIViewController * _Nonnull)vc position:(NSInteger)position;
 + (void)hide:(UIViewController * _Nullable)vc;
 + (BOOL)isShow:(UIViewController * _Nullable)vc SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -790,8 +792,7 @@ SWIFT_CLASS("_TtC5WGSDK12WGSDKSetRole")
 @property (nonatomic, copy) NSString * _Nonnull roleId;
 @property (nonatomic, copy) NSString * _Nonnull roleName;
 @property (nonatomic, copy) NSString * _Nonnull serverName;
-@property (nonatomic, copy) NSString * _Nonnull gameName;
-- (nonnull instancetype)initWithServerCode:(NSString * _Nonnull)serverCode serverName:(NSString * _Nonnull)serverName roleId:(NSString * _Nonnull)roleId roleName:(NSString * _Nonnull)roleName gameName:(NSString * _Nonnull)gameName OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithServerCode:(NSString * _Nonnull)serverCode serverName:(NSString * _Nonnull)serverName roleId:(NSString * _Nonnull)roleId roleName:(NSString * _Nonnull)roleName OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -799,7 +800,7 @@ SWIFT_CLASS("_TtC5WGSDK12WGSDKSetRole")
 
 SWIFT_CLASS("_TtC5WGSDK18WGSDKSetRoleResult")
 @interface WGSDKSetRoleResult : WGSDKSetRole
-- (nonnull instancetype)initWithServerCode:(NSString * _Nonnull)serverCode serverName:(NSString * _Nonnull)serverName roleId:(NSString * _Nonnull)roleId roleName:(NSString * _Nonnull)roleName gameName:(NSString * _Nonnull)gameName OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithServerCode:(NSString * _Nonnull)serverCode serverName:(NSString * _Nonnull)serverName roleId:(NSString * _Nonnull)roleId roleName:(NSString * _Nonnull)roleName OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIApplication;
@@ -809,9 +810,12 @@ SWIFT_CLASS("_TtC5WGSDK10WGSDKSwift")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKSwift * _Nonnull shared;)
 + (WGSDKSwift * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 /// 重新登录回调（其他设备登录当前账号或token刷新失败）
-@property (nonatomic, copy) void (^ _Nullable needReLogin)(void);
+@property (nonatomic, copy) void (^ _Nullable needReLoginHandler)(void);
+/// 重新登录回调（其他设备登录当前账号或token刷新失败）
+@property (nonatomic, copy) void (^ _Nullable changeAccountResultHandler)(WGSDKLoginResult * _Nonnull, NSError * _Nullable);
 /// WGSDK初始化  useDebug:开发环境 默认是正式环境
 - (void)initSDK:(UIApplication * _Nonnull)application launchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions useDebug:(BOOL)useDebug SWIFT_METHOD_FAMILY(none);
+- (void)initSDKUnityWithUseDebug:(BOOL)useDebug adjustAppToken:(NSString * _Nonnull)adjustAppToken lineChannelID:(NSString * _Nonnull)lineChannelID twitterKey:(NSString * _Nonnull)twitterKey twitterSecret:(NSString * _Nonnull)twitterSecret SWIFT_METHOD_FAMILY(none);
 /// 第三方登录回调
 - (BOOL)application:(UIApplication * _Nonnull)app open:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 /// Facebook 回到前台重新激活
@@ -839,7 +843,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKSwift *
 /// 退出登录
 - (void)loginOut;
 /// 显示浮窗
-- (void)showWidget:(UIViewController * _Nonnull)vc position:(NSInteger)position changeAccountCallback:(void (^ _Nullable)(WGSDKLoginResult * _Nonnull, NSError * _Nullable))changeAccountCallback;
+- (void)showWidget:(UIViewController * _Nonnull)vc position:(NSInteger)position;
 /// 移除浮窗
 - (void)hideWidget:(UIViewController * _Nonnull)vc;
 /// 设置角色
@@ -864,7 +868,7 @@ SWIFT_CLASS("_TtC5WGSDK17WGSDKWidgetButton")
 ///
 /// \param changeAccountCallback 切换账号回调
 ///
-+ (void)show:(UIViewController * _Nonnull)vc position:(NSInteger)position changeAccountCallback:(void (^ _Nullable)(WGSDKLoginResult * _Nonnull, NSError * _Nullable))changeAccountCallback;
++ (void)show:(UIViewController * _Nonnull)vc position:(NSInteger)position;
 + (void)hide:(UIViewController * _Nullable)vc;
 + (BOOL)isShow:(UIViewController * _Nullable)vc SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
