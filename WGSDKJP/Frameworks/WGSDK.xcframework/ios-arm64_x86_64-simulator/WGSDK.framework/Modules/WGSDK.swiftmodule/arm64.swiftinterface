@@ -373,12 +373,6 @@ public struct KeychainSwiftConstants {
 extension UIImage {
   public func grayImageWGSDK() -> UIKit.UIImage
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class WGSDKAuth : ObjectiveC.NSObject {
-  @objc public func auth(vc: UIKit.UIViewController, login: WGSDK.WGSDKLogin, completionHandler: (([Swift.String : Any]) -> Swift.Void), guestHandler: (([Swift.String : Any]) -> Swift.Void)? = nil)
-  @objc deinit
-  @objc public static func useDebug(_ useDebug: Swift.Bool)
-  @objc override dynamic public init()
-}
 extension Reactive where Base : UIKit.UITextField {
   public var textChange: RxSwift.Observable<Swift.String?> {
     get
@@ -388,16 +382,6 @@ extension Bundle {
   public var icon: UIKit.UIImage? {
     get
   }
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class WGSDKError : ObjectiveC.NSObject {
-  @objc deinit
-  @objc override dynamic public init()
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class WGSDKIAPManager : ObjectiveC.NSObject {
-  @objc public static let shared: WGSDK.WGSDKIAPManager
-  @objc public func buyProduct(_ product: WGSDK.WGSDKIAPProduct, callBack: @escaping ((WGSDK.WGSDKPaymentResult?, Swift.Error?) -> Swift.Void))
-  @objc deinit
-  @objc override dynamic public init()
 }
 @objc @objcMembers public class WGSDKIAPProduct : ObjectiveC.NSObject {
   @objc public init(productId: Swift.String, serverCode: Swift.String, roleId: Swift.String, roleName: Swift.String, gameInfo: Swift.String)
@@ -411,12 +395,6 @@ extension Bundle {
   @objc public var productPrice: Swift.String
   @objc public var priceLocale: Swift.String
   @objc public var gameInfo: Swift.String
-  @objc deinit
-  @objc override dynamic public init()
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class WGSDKLoginManager : ObjectiveC.NSObject {
-  @objc public static let shared: WGSDK.WGSDKLoginManager
-  @objc public func login(_ login: WGSDK.WGSDKLogin, fromVC: UIKit.UIViewController, handler: @escaping ((WGSDK.WGSDKLoginResult, Swift.Error?) -> Swift.Void))
   @objc deinit
   @objc override dynamic public init()
 }
@@ -443,14 +421,6 @@ final public class WGSDKNetworkLog : Moya.PluginType {
   final public func willSend(_ request: Moya.RequestType, target: Moya.TargetType)
   final public func didReceive(_ result: Swift.Result<Moya.Response, Moya.MoyaError>, target: Moya.TargetType)
   @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class WGSDKRoleManager : ObjectiveC.NSObject {
-  @objc public static let shared: WGSDK.WGSDKRoleManager
-  @objc public func setRole(role: WGSDK.WGSDKSetRole, handler: @escaping ((WGSDK.WGSDKSetRoleResult?, Swift.Error?) -> Swift.Void))
-  @objc public func deleteRole(role: WGSDK.WGSDKDeleteRole, handler: @escaping ((Swift.Error?) -> Swift.Void))
-  @objc public func gameLog(_ gameLog: WGSDK.WGSDKEnterGameLog, handler: @escaping ((Swift.Error?) -> Swift.Void))
-  @objc deinit
-  @objc override dynamic public init()
 }
 @objc @objcMembers public class WGSDKSetRole : ObjectiveC.NSObject {
   @objc public var serverCode: Swift.String
@@ -479,6 +449,7 @@ final public class WGSDKNetworkLog : Moya.PluginType {
 @objc @_inheritsConvenienceInitializers @objcMembers public class WGSDKSwift : ObjectiveC.NSObject {
   @objc public static let shared: WGSDK.WGSDKSwift
   @objc public var needReLoginHandler: (() -> Swift.Void)?
+  @objc public var bindAccountHandler: ((Swift.String) -> Swift.Void)?
   @objc public var changeAccountResultHandler: ((WGSDK.WGSDKLoginResult, Swift.Error?) -> Swift.Void)?
   @objc public func initSDK(_ application: UIKit.UIApplication, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, useDebug: Swift.Bool = false)
   @objc public func initSDKUnity(useDebug: Swift.Bool = false, adjustAppToken: Swift.String, lineChannelID: Swift.String, twitterKey: Swift.String, twitterSecret: Swift.String)
