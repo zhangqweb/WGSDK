@@ -452,6 +452,7 @@ final public class WGSDKNetworkLog : Moya.PluginType {
   @objc public var bindAccountHandler: ((Swift.String) -> Swift.Void)?
   @objc public var changeAccountResultHandler: ((WGSDK.WGSDKLoginResult, Swift.Error?) -> Swift.Void)?
   @objc public func initSDK(_ application: UIKit.UIApplication, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, useDebug: Swift.Bool = false)
+  @objc public func initSDKUnityFacebook(_ application: UIKit.UIApplication, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?)
   @objc public func initSDKUnity(useDebug: Swift.Bool = false, adjustAppToken: Swift.String, lineChannelID: Swift.String, twitterKey: Swift.String, twitterSecret: Swift.String)
   @objc public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
   @objc public func applicationDidBecomeActive()

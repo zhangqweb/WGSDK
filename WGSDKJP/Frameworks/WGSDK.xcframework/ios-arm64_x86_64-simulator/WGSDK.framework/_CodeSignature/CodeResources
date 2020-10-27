@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/WGSDK-Swift.h</key>
 		<data>
-		ap7RcrxZQA4lrZ5eMCS0mZOq+Js=
+		3pO0W+m1QQExgQolXn9VSDXS7uI=
 		</data>
 		<key>Headers/WGSDK-umbrella.h</key>
 		<data>
@@ -18,19 +18,19 @@
 		</data>
 		<key>Modules/WGSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		Jlusm24GbCXTdzBaoKDx/DY0hyI=
+		eGt2l/q+4/z2zqtEhgD5mq3P3QM=
 		</data>
 		<key>Modules/WGSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		Jlusm24GbCXTdzBaoKDx/DY0hyI=
+		eGt2l/q+4/z2zqtEhgD5mq3P3QM=
 		</data>
 		<key>Modules/WGSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		cGTSkD1rXTBPzP0NXTelpNRToHE=
+		5D+hIDfH14uVWMSOGTQWUkfCuHs=
 		</data>
 		<key>Modules/WGSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		cGTSkD1rXTBPzP0NXTelpNRToHE=
+		5D+hIDfH14uVWMSOGTQWUkfCuHs=
 		</data>
 		<key>Modules/WGSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/WGSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		utuC2gfAfjeres4pGEEAtVvrhRU=
+		HQjLCPCFpnGKXQY6UFN5LW9OQBI=
 		</data>
 		<key>Modules/WGSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8Qi1IcHZRXJxUSfQ4v6YX2p2OQA=
+		7JVgWALPnK7Be6k35hRPnbqGwJU=
 		</data>
 		<key>Modules/WGSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/WGSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		utuC2gfAfjeres4pGEEAtVvrhRU=
+		HQjLCPCFpnGKXQY6UFN5LW9OQBI=
 		</data>
 		<key>Modules/WGSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		8Qi1IcHZRXJxUSfQ4v6YX2p2OQA=
+		7JVgWALPnK7Be6k35hRPnbqGwJU=
 		</data>
 		<key>Modules/WGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/WGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		KTk8JouO7dDEwvzZm2s1MWapEAU=
+		3gtLvG+mq+jXNezmm6/K8ylqtMU=
 		</data>
 		<key>Modules/WGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		cGMH4YvLSZf3bFMTCMWLE3IXmtw=
+		t3o7691P1GHDWOrzqgcRCkuR5v0=
 		</data>
 		<key>Modules/WGSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/WGSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		KTk8JouO7dDEwvzZm2s1MWapEAU=
+		3gtLvG+mq+jXNezmm6/K8ylqtMU=
 		</data>
 		<key>Modules/WGSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		cGMH4YvLSZf3bFMTCMWLE3IXmtw=
+		t3o7691P1GHDWOrzqgcRCkuR5v0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -91,11 +91,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ap7RcrxZQA4lrZ5eMCS0mZOq+Js=
+			3pO0W+m1QQExgQolXn9VSDXS7uI=
 			</data>
 			<key>hash2</key>
 			<data>
-			i/mdFUfRwtq2XgvS9TxNGOkXFXa7QLUjqdRF+J4U50A=
+			JqTmsnxxFVIVX/xYzbuffPJeE+weohPaGG51kR+VYSE=
 			</data>
 		</dict>
 		<key>Headers/WGSDK-umbrella.h</key>
@@ -113,44 +113,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Jlusm24GbCXTdzBaoKDx/DY0hyI=
+			eGt2l/q+4/z2zqtEhgD5mq3P3QM=
 			</data>
 			<key>hash2</key>
 			<data>
-			N3Fk/W5KRa1OfL1x3PCsng+A1IV6N3zzYeplZC7XFjw=
+			oQPs00oR3i8e5gqR1DFRY7pXDuxrTtDdcQmLa2ORZPk=
 			</data>
 		</dict>
 		<key>Modules/WGSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Jlusm24GbCXTdzBaoKDx/DY0hyI=
+			eGt2l/q+4/z2zqtEhgD5mq3P3QM=
 			</data>
 			<key>hash2</key>
 			<data>
-			N3Fk/W5KRa1OfL1x3PCsng+A1IV6N3zzYeplZC7XFjw=
+			oQPs00oR3i8e5gqR1DFRY7pXDuxrTtDdcQmLa2ORZPk=
 			</data>
 		</dict>
 		<key>Modules/WGSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cGTSkD1rXTBPzP0NXTelpNRToHE=
+			5D+hIDfH14uVWMSOGTQWUkfCuHs=
 			</data>
 			<key>hash2</key>
 			<data>
-			mshWGeouR+/3rXyFoa3Jb4cbldmdu1ijkzPzU9VU5h8=
+			0AJagLRZVtDdmgyxgQ405P7F/6ql0itcgSQ/rDN6HmU=
 			</data>
 		</dict>
 		<key>Modules/WGSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cGTSkD1rXTBPzP0NXTelpNRToHE=
+			5D+hIDfH14uVWMSOGTQWUkfCuHs=
 			</data>
 			<key>hash2</key>
 			<data>
-			mshWGeouR+/3rXyFoa3Jb4cbldmdu1ijkzPzU9VU5h8=
+			0AJagLRZVtDdmgyxgQ405P7F/6ql0itcgSQ/rDN6HmU=
 			</data>
 		</dict>
 		<key>Modules/WGSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -168,22 +168,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			utuC2gfAfjeres4pGEEAtVvrhRU=
+			HQjLCPCFpnGKXQY6UFN5LW9OQBI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vhujy26wlC2sMXNd7GzTWC3kd/3SBiMnl2xXPPbHulA=
+			ep2Oj9WD/jUpLqM6cd1f8blM2SEUkbTeRGVeBmqmI5w=
 			</data>
 		</dict>
 		<key>Modules/WGSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8Qi1IcHZRXJxUSfQ4v6YX2p2OQA=
+			7JVgWALPnK7Be6k35hRPnbqGwJU=
 			</data>
 			<key>hash2</key>
 			<data>
-			mtxLvZxMnU2eyZzox+lwv8cvC4tN8/x+c1lIF3URheU=
+			OiwucNxlWChFTfeAPscXIKshkdwjjTVfXPYuXeDRO0Q=
 			</data>
 		</dict>
 		<key>Modules/WGSDK.swiftmodule/arm64.swiftdoc</key>
@@ -201,22 +201,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			utuC2gfAfjeres4pGEEAtVvrhRU=
+			HQjLCPCFpnGKXQY6UFN5LW9OQBI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vhujy26wlC2sMXNd7GzTWC3kd/3SBiMnl2xXPPbHulA=
+			ep2Oj9WD/jUpLqM6cd1f8blM2SEUkbTeRGVeBmqmI5w=
 			</data>
 		</dict>
 		<key>Modules/WGSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8Qi1IcHZRXJxUSfQ4v6YX2p2OQA=
+			7JVgWALPnK7Be6k35hRPnbqGwJU=
 			</data>
 			<key>hash2</key>
 			<data>
-			mtxLvZxMnU2eyZzox+lwv8cvC4tN8/x+c1lIF3URheU=
+			OiwucNxlWChFTfeAPscXIKshkdwjjTVfXPYuXeDRO0Q=
 			</data>
 		</dict>
 		<key>Modules/WGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -234,22 +234,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KTk8JouO7dDEwvzZm2s1MWapEAU=
+			3gtLvG+mq+jXNezmm6/K8ylqtMU=
 			</data>
 			<key>hash2</key>
 			<data>
-			qnuE5hbOS8u4hoNwbgUMTsZr0eseH2/aqNmZkdib+V4=
+			q5C9PoVlPDMh0J1FaDwFjLnYwXO+kQ5ks1nnrHzADtA=
 			</data>
 		</dict>
 		<key>Modules/WGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cGMH4YvLSZf3bFMTCMWLE3IXmtw=
+			t3o7691P1GHDWOrzqgcRCkuR5v0=
 			</data>
 			<key>hash2</key>
 			<data>
-			8VklexDqDt9oz4ZaXKik5ab4S7kGA9d02c/Twtc7Fo0=
+			/8E6/DUbQFEUYPrS960AgioSA+XeK4ZvFZm5RBfmO5E=
 			</data>
 		</dict>
 		<key>Modules/WGSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -267,22 +267,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KTk8JouO7dDEwvzZm2s1MWapEAU=
+			3gtLvG+mq+jXNezmm6/K8ylqtMU=
 			</data>
 			<key>hash2</key>
 			<data>
-			qnuE5hbOS8u4hoNwbgUMTsZr0eseH2/aqNmZkdib+V4=
+			q5C9PoVlPDMh0J1FaDwFjLnYwXO+kQ5ks1nnrHzADtA=
 			</data>
 		</dict>
 		<key>Modules/WGSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cGMH4YvLSZf3bFMTCMWLE3IXmtw=
+			t3o7691P1GHDWOrzqgcRCkuR5v0=
 			</data>
 			<key>hash2</key>
 			<data>
-			8VklexDqDt9oz4ZaXKik5ab4S7kGA9d02c/Twtc7Fo0=
+			/8E6/DUbQFEUYPrS960AgioSA+XeK4ZvFZm5RBfmO5E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

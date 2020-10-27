@@ -319,6 +319,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKSwift *
 @property (nonatomic, copy) void (^ _Nullable changeAccountResultHandler)(WGSDKLoginResult * _Nonnull, NSError * _Nullable);
 /// WGSDK初始化  useDebug:开发环境 默认是正式环境
 - (void)initSDK:(UIApplication * _Nonnull)application launchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions useDebug:(BOOL)useDebug SWIFT_METHOD_FAMILY(none);
+- (void)initSDKUnityFacebook:(UIApplication * _Nonnull)application launchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_METHOD_FAMILY(none);
 /// unity使用
 - (void)initSDKUnityWithUseDebug:(BOOL)useDebug adjustAppToken:(NSString * _Nonnull)adjustAppToken lineChannelID:(NSString * _Nonnull)lineChannelID twitterKey:(NSString * _Nonnull)twitterKey twitterSecret:(NSString * _Nonnull)twitterSecret SWIFT_METHOD_FAMILY(none);
 /// 第三方登录回调
@@ -738,6 +739,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WGSDKSwift *
 @property (nonatomic, copy) void (^ _Nullable changeAccountResultHandler)(WGSDKLoginResult * _Nonnull, NSError * _Nullable);
 /// WGSDK初始化  useDebug:开发环境 默认是正式环境
 - (void)initSDK:(UIApplication * _Nonnull)application launchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions useDebug:(BOOL)useDebug SWIFT_METHOD_FAMILY(none);
+- (void)initSDKUnityFacebook:(UIApplication * _Nonnull)application launchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_METHOD_FAMILY(none);
 /// unity使用
 - (void)initSDKUnityWithUseDebug:(BOOL)useDebug adjustAppToken:(NSString * _Nonnull)adjustAppToken lineChannelID:(NSString * _Nonnull)lineChannelID twitterKey:(NSString * _Nonnull)twitterKey twitterSecret:(NSString * _Nonnull)twitterSecret SWIFT_METHOD_FAMILY(none);
 /// 第三方登录回调
